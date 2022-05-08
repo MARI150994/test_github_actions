@@ -12,6 +12,9 @@ class Department(models.Model):
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('department-detail', kwargs={'pk': self.pk})
+
 
 class Role(models.Model):
     department = models.ForeignKey(Department,

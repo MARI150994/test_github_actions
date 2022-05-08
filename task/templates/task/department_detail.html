@@ -1,0 +1,15 @@
+{% extends 'task/base.html' %}
+{% block title %}Department detail{{% endblock %}
+{% block content %}
+    <h2>{{ department }}</h2>
+    <ul>
+    {% for role in roles %}
+        <li>{{ role }}</li>
+    {% empty %}
+        <p>There are no roles in this department yet</p>
+    {% endfor %}
+    </ul>
+    <div class="container mt-4">
+        <a href="{% url 'department-list' %}" class="btn btn-outline-primary">Back</a>
+    </div>
+{% endblock %}

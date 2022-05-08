@@ -3,6 +3,7 @@ backports.zoneinfo==0.2.1
 certifi==2021.10.8
 cffi==1.15.0
 charset-normalizer==2.0.12
+coverage==6.3.2
 cryptography==36.0.2
 defusedxml==0.7.1
 Django==4.0.3

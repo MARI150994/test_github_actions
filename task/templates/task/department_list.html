@@ -1,0 +1,12 @@
+{% extends 'task/base.html' %}
+{% block title %}Departments{{% endblock %}
+{% block content %}
+    <h1>Departments</h1>
+    <ul>
+    {% for dep in department_list %}
+        <li>
+            <a class="nav-link active" aria-current="page" href="{{ dep.get_absolute_url }}">{{ dep }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
